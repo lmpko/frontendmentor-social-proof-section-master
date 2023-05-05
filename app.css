@@ -101,8 +101,83 @@ main{
     width: 3.125rem;
 }
 
-@media (min-width: 1000px){
+@media (min-width: 950px){
     body{
         background-image: url("/images/bg-pattern-top-desktop.svg"), url("/images/bg-pattern-bottom-desktop.svg");
+        background-position: top 0 left 0, bottom 0 right 0;
     }
+
+    main{
+        display: grid;
+        grid-template-rows: 0.5fr 0.5fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "overview ratings"
+        "feedback feedback";
+        margin: 7.1875rem;
+    }
+
+    .overview{
+        grid-area: overview;
+    }
+
+    .ratings{
+        grid-area: ratings;
+    }
+
+    .feedback{
+        grid-area: feedback;
+    }
+
+    .feedback{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .feedback p{
+        padding: .1875rem 1.875rem;
+    }
+
+    .feedback .card{
+        width: 20.9375rem;
+        height: 14.6875rem;
+    }
+
+    .feedback .card:nth-child(2){
+        margin: .9375rem 1.5625rem 0 1.5625rem;
+    }
+
+    .feedback .card:nth-child(3){
+        margin-top: 1.875rem;
+    }
+
+    .overview{
+        text-align: start;
+        width: 22.5rem;
+    }
+    .overview h1{
+        font-size: 54px;
+        padding: 0;
+    }
+
+    .ratings div{
+        width: 27.8125rem;
+        flex-direction: row;
+        justify-content: center;
+        margin: 1.5625rem 0;
+    }
+
+    .ratings div span {
+        padding: 0 1.875rem;
+    }
+
+    .ratings div:nth-child(2){
+        margin-left: 2.8125rem;
+    }
+
+    .ratings div:nth-child(3){
+        margin-left: 5.625rem;
+    }
+
 }
