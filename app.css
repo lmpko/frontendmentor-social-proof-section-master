@@ -13,4 +13,81 @@ body{
     margin: 0;
     font-size: 15px;
     font-family: 'League Spartan', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+
+main{
+    margin: 5rem 1.5625rem;
+}
+
+.overview{
+    text-align: center;
+}
+
+.overview h1{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 32px;
+    padding: 0 2.1875rem;
+}
+
+.overview p{
+    font-weight: 500;
+    color: var(--tertiary-color);
+    line-height: 1.5;
+}
+
+.ratings{
+    padding: 3.125rem 0;
+}
+
+.ratings div {
+    background-color: var(--fouthary-color);
+    border-radius: .3125rem;
+    margin: .4375rem 0;
+    padding: 1.125rem 0;
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.feedback div{
+    background-color: var(--primary-color);
+    color: var(--fifthary-color);
+    border-radius: .625rem;
+}
+
+.feedback div img{
+    border-radius: 50%;
+    padding: 0 1.5625rem;
+}
+
+.feedback p {
+    font-weight: 500;
+    line-height: 1.3;
+    padding: 2.1875rem 1.875rem;
+}
+
+.personal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 2.5rem;
+}
+
+.personal aside div{
+    font-weight: 700;
+    padding: .125rem 0;
+}
+
+.personal aside div:nth-child(2){
+    color: var(--secondary-color);
+}
+
+.personal img{
+    width: 3.125rem;
 }
