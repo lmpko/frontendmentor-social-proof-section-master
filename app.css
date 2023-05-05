@@ -1,1 +1,16 @@
-/* font-family: 'League Spartan', sans-serif; /*
+/* font-family: 'League Spartan', sans-serif; */
+
+:root{
+    --primary-color: hsl(300, 43%, 22%);
+    --secondary-color: hsl(333, 80%, 67%);
+
+    --tertiary-color: hsl(303, 10%, 53%);
+    --fouthary-color: hsl(300, 24%, 96%);
+    --fifthary-color: hsl(0, 0%, 100%);
+}
+
+body{
+    margin: 0;
+    font-size: 15px;
+    font-family: 'League Spartan', sans-serif;
+}
