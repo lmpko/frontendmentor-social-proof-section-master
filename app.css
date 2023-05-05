@@ -114,7 +114,6 @@ main{
         grid-template-areas: 
         "overview ratings"
         "feedback feedback";
-        margin: 7.1875rem;
     }
 
     .overview{
